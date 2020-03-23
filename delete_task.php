@@ -16,7 +16,9 @@ if(ISSET($_GET['id'])){
         $_SESSION['message_type'] = "danger"; //success
         header("Location: index.php");
     }
-
+    /*mysqli_free_result($resultado_eliminacion);
+    mysqli_close($conn);
+    */
 }
 
 ?>

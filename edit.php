@@ -2,6 +2,7 @@
 
 include("db.php");
 
+
 if(ISSET($_GET['id'])){
 
     $id = $_GET['id'];
@@ -17,7 +18,8 @@ if(ISSET($_GET['id'])){
       $description =  $row['description'];
       //echo $title . "<br>";
     }
-     
+  /*  mysqli_free_result($resultadoQuery);
+    mysqli_close($conn);*/
 }
 
 if(ISSET($_POST['update'])){
@@ -44,7 +46,10 @@ if(ISSET($_POST['update'])){
         $_SESSION['message_type'] = "warning"; //success
         header("Location: index.php");
     }
-
+/*
+    mysqli_free_result($resultUpdate);
+    mysqli_close($conn);
+*/
 }
 ?>
 

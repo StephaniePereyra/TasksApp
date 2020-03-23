@@ -11,7 +11,7 @@
     <!-- FONT AWESOME 5 para los iconos en los botones -->
     <script src="https://kit.fontawesome.com/491cecaa42.js" crossorigin="anonymous"></script>
 
-    
-    <title>PHP Mysql CRUD</title>
+
+    <title>Aplicación para Gestión de tareas</title>
 </head>
 <body>

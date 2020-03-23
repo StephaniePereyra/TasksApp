@@ -3,7 +3,7 @@
 <nav class="navbar navbar-dark bg-dark">
     <div class="container">
         <a href="index.php" class="navbar-brand"> 
-           App con PHP y MYSQL
+        TaskApp: ¡La mejor aplicación para Gestión de tareas!
         </a>
     </div>
 

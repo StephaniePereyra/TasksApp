@@ -22,12 +22,12 @@
                     <form action="save_task.php" method="POST">
                         <div class="form-group">
                             <input type="text" name="title" class="form-control"
-                            placeholder="Task Title" autofocus> 
+                            placeholder="Título de la tarea" autofocus> 
 
                         </div>
                         <div class="form-group">
                         <textarea name="description" id="description"  rows="2" class="form-control" 
-                        placeholder="Task Description"></textarea>
+                        placeholder="Descripción de la tarea"></textarea>
                         </div>
                         <input type="submit" class="btn btn-success btn-block" name="save_task" value="Save Task">
                     </form>
@@ -80,7 +80,10 @@
                                                     </a>
                                                 </td>
                                             </tr>    
-                                    <?php    } ?>
+                                    <?php   
+                                          //  mysqli_free_result($result);
+                                          //  mysqli_close($conn);
+                                    } ?>
                             </tbody>
                         </table>
             </div>

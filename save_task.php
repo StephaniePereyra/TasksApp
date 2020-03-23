@@ -20,5 +20,7 @@ $result = mysqli_query($conn, $query);
         //PARA MOSTRAR ERROR   $_SESSION['message_type'] = 'danger';
         header("Location: index.php");
     }
+   /* mysqli_free_result($result);
+    mysqli_close($conn);*/
 }
 ?>
