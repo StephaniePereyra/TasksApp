@@ -31,7 +31,8 @@ if(ISSET($_POST['update'])){
     echo $newTitle . "<br>";
     echo $newDescription . "<br>";
 
-    $query = "UPDATE task SET title= '$newTitle', description='$newDescription' WHERE id=$id";
+    $query = "UPDATE task SET title = '$newTitle' AND description='$newDescription' WHERE id = '$id'";
+    echo "El valor de la query es > " . $query;
     $resultUpdate = mysqli_query($conn,$query);
 
     if(!$resultUpdate){
@@ -53,10 +54,10 @@ if(ISSET($_POST['update'])){
         <div class="row">
             <div class="col-md-4 mx-auto">
                 <div class="card card-body">
-                    <form action="edit.php?id=<?php echo $ $_GET['id'];?>" method="POST">
+                    <form action="edit.php?id=<?php echo $_GET['id'];?>" method="POST">
                         <div class="form-group">
                             <input type="text" name="title" value="<?php echo $title;?>"
-                            class="form-control" placeholder="Actualiza el titulo"                            >
+                            class="form-control" placeholder="Actualiza el titulo">
                         </div>
                         <div class="form-group">
                             <textarea name="description"  rows="2" class="form-control" placeholder="Actualizar la descripcion"><?php echo $description;?></textarea>
